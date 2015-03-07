@@ -1,0 +1,17 @@
+<label id="question"><%= qnum %>. <%= question %></label>
+<div><input type="radio" name="choices" id="choice1" value="0"><label for="choice1"><%= answer1 %></label></div>
+<div><input type="radio" name="choices" id="choice2" value="1"><label for="choice2"><%= answer2 %></label></div>
+<div><input type="radio" name="choices" id="choice3" value="2"><label for="choice3"><%= answer3 %></label></div>
+<div><input type="radio" name="choices" id="choice4" value="3"><label for="choice4"><%= answer4 %></label></div>
+<div id="buttons-container">
+	<% if (this.model.id != 1 && this.model.id != 6 && this.model.id != 11 && this.model.id != 16) { %>
+	<button class="btn btn-primary" id="back"> back</button>
+	<% } %>
+	<% if (this.model.id % 5 !== 0) { %>
+	<button class="btn btn-primary" id="next">next </button>
+	<% } %>
+	<% if (this.model.id % 5 === 0) { %>
+	<button class="btn btn-primary" id="submit">submit </button>
+	<% } %>
+</div>
+<div id="please-select" class="display-none">Please select an option</div>
