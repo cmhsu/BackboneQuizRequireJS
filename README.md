@@ -1,6 +1,6 @@
 # BackboneQuizRequireJS
 
-Demo: http://cmhsu.github.io/BackboneQuizRequireJs/
+Demo: http://cmhsu.github.io/BackboneQuizRequireJS/
 
 This quiz app was built with:
 
